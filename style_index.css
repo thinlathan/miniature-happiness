@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	background: #EFEFEF;
+	color: #A9A9A9;
+	font-family: arial;
+}
+
+header {
+  background: #CAEBF2;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block; /*make it in a row instead of alot of row*/
+  position: relative; /*when  hover, the hover is relative*/
+}
+
+nav a {
+  color: black;
+  font-size:100px; 
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #FF3B3F;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #FF3B3F;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms; /*for transition*/
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
