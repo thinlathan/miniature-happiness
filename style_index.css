@@ -59,3 +59,39 @@ nav a:hover::before {
   width: 100%;
 }
 
+/* The sidebar menu */
+.sidenav {
+  height: auto; /* Auto-Height */
+  width: auto; /* Auto-Width */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  right: 0; /*Stay on the right*/
+  background-color: #CAEBF2; /* Black */
+  border-radius: 25px; /*curved border*/
+  border: outset; 1px black; /*dotted order*/
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
